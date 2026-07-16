@@ -3,7 +3,7 @@
 
 - name: "Remount tmp filesystem"
   ansible.builtin.include_tasks:
-    file: remount_tmp.yml
+    file: "{{ role_path }}/tasks/remount_tmp.yml"
   listen: "Remount /tmp"
 
 - name: "Adding options for /dev/shm"
